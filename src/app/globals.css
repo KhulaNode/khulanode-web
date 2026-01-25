@@ -14,12 +14,24 @@ html {
 
 body {
   line-height: 1.6;
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
 a {
-  transition: color 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .container {
   @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Custom gradient backgrounds */
+@layer utilities {
+  .gradient-brand {
+    background: linear-gradient(135deg, #14ABBC 0%, #239EF4 50%, #2A54A7 100%);
+  }
+  
+  .gradient-brand-light {
+    background: linear-gradient(135deg, rgba(20, 171, 188, 0.1) 0%, rgba(35, 158, 244, 0.1) 100%);
+  }
 }

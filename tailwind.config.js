@@ -8,13 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        slate: {
-          50: '#F8FAFC',
-          500: '#64748B',
-          900: '#0F172A',
-        },
-        teal: {
-          600: '#0D9488',
+        brand: {
+          cyan: '#14ABBC',
+          blue: '#239EF4',
+          darkblue: '#2A54A7',
+          gray: '#424242',
         },
       },
       fontFamily: {
