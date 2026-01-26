@@ -7,8 +7,8 @@ services:
       dockerfile: Dockerfile
     container_name: khulanode-web
     restart: unless-stopped
-    ports:
-      - "3000:3000"
+    # ports:
+    #   - "3000:3000"
     environment:
       - NODE_ENV=production
       - PLUNK_API_KEY=${PLUNK_API_KEY}
