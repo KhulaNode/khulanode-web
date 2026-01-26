@@ -12,31 +12,17 @@ const videos = [
 
 export default function VideoCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   useEffect(() => {
-    if (!isAutoPlaying) return;
-
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % videos.length);
     }, 4000); // Change video every 4 seconds
 
     return () => clearInterval(interval);
-  }, [isAutoPlaying]);
-
-  const goToNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % videos.length);
-    setIsAutoPlaying(false);
-  };
-
-  const goToPrevious = () => {
-    setCurrentIndex((prev) => (prev - 1 + videos.length) % videos.length);
-    setIsAutoPlaying(false);
-  };
+  }, []);
 
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
-    setIsAutoPlaying(false);
   };
 
   return (
