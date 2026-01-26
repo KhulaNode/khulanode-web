@@ -32,6 +32,25 @@ a {
   }
   
   .gradient-brand-light {
-    background: linear-gradient(135deg, rgba(20, 171, 188, 0.1) 0%, rgba(35, 158, 244, 0.1) 100%);
+    background: linear-gradient(135deg, rgba(20, 171, 188, 0.15) 0%, rgba(35, 158, 244, 0.15) 100%);
+  }
+  
+  .gradient-brand-vibrant {
+    background: linear-gradient(135deg, #14ABBC 0%, #239EF4 100%);
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, #14ABBC 0%, #2A54A7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .glow-cyan {
+    box-shadow: 0 0 20px rgba(20, 171, 188, 0.3);
+  }
+  
+  .glow-blue {
+    box-shadow: 0 0 20px rgba(35, 158, 244, 0.3);
   }
 }
