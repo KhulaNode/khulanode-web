@@ -218,7 +218,7 @@ export default function Home() {
               </div>
               <h3 className="font-semibold text-brand-darkblue mb-2 text-lg">Connect</h3>
               <p className="text-gray-700 text-sm">
-                Payments integrate with trusted providers. Your data stays secure and separate.
+                Addons and integrations with trusted providers are made available. Your data stays secure and separate.
               </p>
             </div>
 
