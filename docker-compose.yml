@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  khulanode-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: khulanode-web
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PLUNK_API_KEY=${PLUNK_API_KEY}
+    volumes:
+      - ./public:/app/public:ro
+    networks:
+      - khulanode-network
+
+networks:
+  khulanode-network:
+    driver: bridge

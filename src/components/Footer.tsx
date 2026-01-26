@@ -80,7 +80,6 @@ export default function Footer() {
           {/* Copyright */}
           <div className="flex flex-col md:flex-row items-center justify-between text-xs text-gray-300">
             <p>&copy; {currentYear} KhulaNode. All rights reserved.</p>
-            <p>Trusted by small businesses across South Africa.</p>
           </div>
         </div>
       </div>
