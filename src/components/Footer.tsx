@@ -53,6 +53,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/acceptable-use" className="hover:text-brand-cyan transition-colors hover:underline">
+                  Acceptable Use Policy
+                </Link>
+              </li>
+              <li>
                 <Link href="/refunds" className="hover:text-brand-cyan transition-colors hover:underline">
                   Refund & Cancellation
                 </Link>
