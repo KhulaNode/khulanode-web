@@ -86,6 +86,53 @@ export default function Pricing() {
 
       {/* Pricing Calculator */}
       <PricingCalculator />
+
+      {/* Payment Flow Explanation */}
+      <section className="bg-white py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-8 lg:gap-12">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-wide text-blue-600 mb-3">
+                Payment clarity
+              </p>
+              <h2 className="text-3xl font-bold text-gray-900">
+                How payments work
+              </h2>
+            </div>
+
+            <div>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Clients engage KhulaNode directly for managed digital services such as websites,
+                e-commerce systems, and related business infrastructure. Once scope and commercial
+                terms are agreed, the client is issued a payment request, invoice, or checkout link.
+                Payment is processed securely by the payment provider and settles directly to
+                KhulaNode. KhulaNode then delivers the agreed setup and ongoing managed service.
+                KhulaNode does not hold or distribute funds on behalf of third parties and does not
+                operate a marketplace or escrow model.
+              </p>
+
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 h-2 w-2 rounded-full bg-blue-600 flex-shrink-0" aria-hidden="true" />
+                  <span>Direct payment from client to KhulaNode</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 h-2 w-2 rounded-full bg-blue-600 flex-shrink-0" aria-hidden="true" />
+                  <span>Secure processing by payment provider</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 h-2 w-2 rounded-full bg-blue-600 flex-shrink-0" aria-hidden="true" />
+                  <span>No third-party fund handling</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 h-2 w-2 rounded-full bg-blue-600 flex-shrink-0" aria-hidden="true" />
+                  <span>No marketplace or split-payment model</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
