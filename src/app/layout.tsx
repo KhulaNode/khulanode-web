@@ -6,6 +6,15 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'KhulaNode - Digital Business Systems',
   description: 'Build and scale your business with secure, reliable digital systems. Payments, subscriptions, and online operations—simplified.',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32' },
+      { url: '/icon.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
 };
 
 export default function RootLayout({
