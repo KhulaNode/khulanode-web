@@ -11,7 +11,7 @@ export default function AcceptableUse() {
       <div className="container max-w-2xl">
         <h1 className="text-4xl font-bold text-slate-900 mb-4">Acceptable Use Policy</h1>
         <p className="text-slate-600 mb-4">
-          Effective date: January 2026
+          Effective date: April 2026
         </p>
         <p className="text-slate-600 mb-12">
           <a 
